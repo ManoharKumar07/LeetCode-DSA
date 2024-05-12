@@ -44,9 +44,30 @@
 //   }
 
 // }
-import java.util.Scanner;
+import java.util.*;
 
 class TwoSum_1{
+
+public static int [] twosumHashing(int nums[],int target){
+    Map <Integer,Integer> map=new HashMap<>();
+
+    for (int i=0;i<nums.length;i++){
+
+        int compliment = target - nums[i];
+
+        if(map.containsKey(compliment)){
+            return new int[]{map.get(compliment), i};
+
+           
+        }
+        map.put(nums[i],i);
+
+    }
+    throw new IllegalArgumentException("no solution");
+
+
+}
+
     public static void main (String args[]){
         int target;
         Scanner sc = new Scanner(System.in);
@@ -56,6 +77,18 @@ class TwoSum_1{
         int n = sc.nextInt();
         int arr[]=new int[n];
         System.out.println("Enter the array elements");
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+
+        }
+        int indexes[]=new int[2];
+         indexes=twosumHashing(arr, target);
+System.out.println("Solution");
+         for(int i:indexes){
+            System.out.println(i);
+         }
+
 
     }
+ 
 }
