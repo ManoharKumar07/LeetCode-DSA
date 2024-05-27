@@ -15,7 +15,7 @@ public class SquareRoot_69{
         return high;
     }
  public static void main(String[] args) {
-    System.out.println("HII");
+
      int sq = mySqrt(10);
      System.out.println(sq);
  }
