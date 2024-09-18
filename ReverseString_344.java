@@ -20,7 +20,7 @@ public static void main (String args[]){
 Scanner sc=new Scanner(System.in);
 System.out.println("Enter the string to reverse:");
 String word=sc.nextLine();
-
+sc.close();
 char [] s= new char[word.length()];
 for (int i=0;i<word.length();i++){
     s[i]=word.charAt(i);

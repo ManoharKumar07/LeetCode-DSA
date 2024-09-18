@@ -19,7 +19,7 @@ class Palindrome_1 {
             System.out.println(temp+" is not a Palindrome number");
         }
 
-
+sc.close();
 
     }
 }

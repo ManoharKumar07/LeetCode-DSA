@@ -75,14 +75,15 @@ public static int [] twosumHashing(int nums[],int target){
         target=sc.nextInt();
         System.out.println("Enter the size of the array:");
         int n = sc.nextInt();
+    
         int arr[]=new int[n];
         System.out.println("Enter the array elements");
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
 
         }
-        int indexes[]=new int[2];
-         indexes=twosumHashing(arr, target);
+        sc.close();
+         int [] indexes=twosumHashing(arr, target);
 System.out.println("Solution");
          for(int i:indexes){
             System.out.println(i);
