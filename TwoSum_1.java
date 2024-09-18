@@ -1,4 +1,4 @@
-
+// The Arrays and HashMap can be imported from util package
 
 // class TwoSum_1 {
 //     public static int[] twoSum(int[] nums, int target) {
